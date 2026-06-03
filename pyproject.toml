@@ -1,0 +1,35 @@
+[project]
+name = "ds-ocr2-3090-runner"
+version = "0.1.0"
+description = "FastAPI service for DeepSeek-OCR-2 tasks with PostgreSQL-backed queue and local file storage."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "psycopg[binary]>=3.2.0",
+    "pydantic-settings>=2.6.0",
+    "python-multipart>=0.0.9",
+    "sqlalchemy>=2.0.35",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.7.0",
+]
+models = [
+    "huggingface-hub>=0.36.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
