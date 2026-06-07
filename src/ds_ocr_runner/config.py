@@ -17,6 +17,15 @@ class Settings(BaseSettings):
     postgres_password: str = "dsocr"
     storage_root: Path = Field(default=Path("./storage"))
     ocr_backend: str = "stub"
+    deepseek_ocr_python: str = "python"
+    deepseek_ocr_model_dir: Path = Field(default=Path("./models/DeepSeek-OCR-2"))
+    deepseek_ocr_output_root: Path = Field(default=Path("./storage/results/deepseek-ocr-2"))
+    deepseek_ocr_timeout_seconds: int = 900
+    deepseek_ocr_base_size: int = 1024
+    deepseek_ocr_image_size: int = 768
+    deepseek_ocr_crop_mode: bool = True
+    deepseek_ocr_attn_implementation: str = "eager"
+    deepseek_ocr_dtype: str = "bfloat16"
     queue_visibility_timeout_seconds: int = 900
     worker_id: str = "local-worker"
 
@@ -25,6 +34,14 @@ class Settings(BaseSettings):
     @property
     def resolved_storage_root(self) -> Path:
         return self.storage_root.expanduser().resolve()
+
+    @property
+    def resolved_deepseek_ocr_model_dir(self) -> Path:
+        return self.deepseek_ocr_model_dir.expanduser().resolve()
+
+    @property
+    def resolved_deepseek_ocr_output_root(self) -> Path:
+        return self.deepseek_ocr_output_root.expanduser().resolve()
 
     @property
     def sqlalchemy_database_url(self) -> str:

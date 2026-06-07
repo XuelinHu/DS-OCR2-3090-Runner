@@ -151,6 +151,15 @@ That path is safe for CPU-only development. A real DeepSeek-OCR-2 backend should
 be added in a separate GPU deployment module and enabled explicitly with an
 environment value such as `OCR_BACKEND=deepseek-ocr-2`.
 
+The current GPU backend runs DeepSeek-OCR-2 through a separate Python process:
+
+```bash
+OCR_BACKEND=deepseek-ocr-2 python -m ds_ocr_runner.worker --once
+```
+
+It defaults to the local model cache at `models/DeepSeek-OCR-2` and uses
+`eager` attention to avoid requiring `flash-attn`.
+
 ## Model Cache
 
 DeepSeek-OCR-2 model files are cached under:
