@@ -1,13 +1,12 @@
 # DS-OCR2-3090-Runner
 
 <p align="center">
-  <img height="20" src="https://img.shields.io/badge/python-3.11%2B-3776AB" />
-  <img height="20" src="https://img.shields.io/badge/fastapi-0.115%2B-009688" />
-  <img height="20" src="https://img.shields.io/badge/flutter-configured-02569B" />
-  <img height="20" src="https://img.shields.io/badge/dart-3.12%2B-0175C2" />
-  <img height="20" src="https://img.shields.io/badge/postgresql-16-4169E1" />
-  <img height="20" src="https://img.shields.io/badge/sqlalchemy-2.0%2B-D71F00" />
-  <img height="20" src="https://img.shields.io/badge/docker-compose-2496ED" />
+  <img height="20" src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&amp;logoColor=white" />
+  <img height="20" src="https://img.shields.io/badge/fastapi-0.115%2B-009688?logo=fastapi&amp;logoColor=white" />
+  <img height="20" src="https://img.shields.io/badge/flutter-configured-02569B?logo=flutter&amp;logoColor=white" />
+  <img height="20" src="https://img.shields.io/badge/postgresql-16-4169E1?logo=postgresql&amp;logoColor=white" />
+  <img height="20" src="https://img.shields.io/badge/sqlalchemy-2.0%2B-D71F00?logo=sqlalchemy&amp;logoColor=white" />
+  <img height="20" src="https://img.shields.io/badge/docker_compose-configured-2496ED?logo=docker&amp;logoColor=white" />
 </p>
 
 DeepSeek-OCR-2 app backend scaffold. The service uses FastAPI for HTTP APIs,
