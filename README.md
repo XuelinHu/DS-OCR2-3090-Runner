@@ -201,3 +201,28 @@ README badges were generated from real repository files using the
 - `compose.yaml`
 - `mobile/pubspec.yaml`
 - `mobile/android/app/src/main/AndroidManifest.xml`
+
+<!-- codex-runtime-notes:start -->
+
+## Runtime Ports And Database Configuration
+
+### Database
+- Primary database: PostgreSQL.
+- Default database name: `dsocr`.
+- Default host and port: `localhost:5432`; Docker Compose service name: `postgres`.
+- Default Compose credentials: `POSTGRES_USER=dsocr`, `POSTGRES_PASSWORD=dsocr`; `.env.example` keeps credentials as placeholders for local override.
+- SQLAlchemy URL is assembled as `postgresql+psycopg://<user>:<password>@<host>:<port>/<db>` unless `DATABASE_URL` is set.
+
+### Default Ports
+- API service: `8000` (`compose.yaml` maps `8000:8000`).
+- PostgreSQL: `5432`.
+
+### Notes
+- PostgreSQL is also used as the task queue through row locking; Redis is intentionally not required.
+
+### Source Files Checked
+- `.env.example`
+- `compose.yaml`
+- `src/ds_ocr_runner/config.py`
+
+<!-- codex-runtime-notes:end -->
