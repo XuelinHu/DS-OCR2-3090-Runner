@@ -15,7 +15,7 @@
 - SQLAlchemy URL is assembled as `postgresql+psycopg://<user>:<password>@<host>:<port>/<db>` unless `DATABASE_URL` is set.
 
 ### Default Ports
-- API service: `8000` (`compose.yaml` maps `8000:8000`).
+- API service: `8020` (`compose.yaml` maps `8020:8000`).
 - PostgreSQL: `5432`.
 
 ### Notes For Codex Agents

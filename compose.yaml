@@ -22,7 +22,7 @@ services:
       STORAGE_ROOT: /app/storage
       OCR_BACKEND: stub
     ports:
-      - "8000:8000"
+      - "8020:8000"
     volumes:
       - ./storage:/app/storage
     depends_on:

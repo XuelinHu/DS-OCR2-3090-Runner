@@ -16,7 +16,7 @@ Flutter Android client for `DS-OCR2-3090-Runner`.
 The default Android emulator URL is:
 
 ```text
-http://10.0.2.2:8000
+http://10.0.2.2:8020
 ```
 
 For a physical Android device, set the API base URL in the app settings to the
