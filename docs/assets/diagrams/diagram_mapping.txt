@@ -1,0 +1,21 @@
+详细设计小节 - 设计图文件 - 图示说明TXT - 图示类型 - 覆盖内容
+5.1 Android客户端与设置管理 - 04_component_collaboration.png - 04_component_collaboration.txt - 组件图 - 移动端与服务端组件职责
+5.1 Android客户端与设置管理 - 06_settings_sequence.png - 06_settings_sequence.txt - 时序图 - 地址读取和保存顺序
+5.2 文件选择、上传与存储 - 07_file_upload_sequence.png - 07_file_upload_sequence.txt - 时序图 - 文件选择、分块上传和文件记录
+5.2 文件选择、上传与存储 - 17_storage_activity.png - 17_storage_activity.txt - 活动图 - 流式保存与摘要计算
+5.3 OCR任务创建与状态轮询 - 08_task_poll_sequence.png - 08_task_poll_sequence.txt - 时序图 - 创建、轮询和结果读取
+5.3 OCR任务创建与状态轮询 - 22_ui_state_model.png - 22_ui_state_model.txt - 状态图 - Android页面状态转换
+5.4 PostgreSQL队列领取与重试 - 09_queue_claim_sequence.png - 09_queue_claim_sequence.txt - 时序图 - 事务行锁领取
+5.4 PostgreSQL队列领取与重试 - 18_retry_activity.png - 18_retry_activity.txt - 活动图 - 失败重试决策
+5.5 OCR后端选择与推理执行 - 10_inference_sequence.png - 10_inference_sequence.txt - 时序图 - 后端选择和子进程推理
+5.5 OCR后端选择与推理执行 - 24_error_paths.png - 24_error_paths.txt - 活动图 - 推理与接口异常恢复
+5.6 结果持久化与双格式展示 - 11_result_sequence.png - 11_result_sequence.txt - 时序图 - 结果写入和双格式读取
+5.6 结果持久化与双格式展示 - 05_mobile_interaction_flow.png - 05_mobile_interaction_flow.txt - 交互流程图 - 用户完整操作路径
+5.7 数据对象与状态管理 - 14_er_model.png - 14_er_model.txt - ER图 - 表、字段、基数和约束
+5.7 数据对象与状态管理 - 15_domain_class.png - 15_domain_class.txt - 类图 - 领域对象和状态枚举
+5.7 数据对象与状态管理 - 13_task_state.png - 13_task_state.txt - 状态图 - 服务端任务状态转换
+5.8 接口边界与运行部署 - 16_api_boundary.png - 16_api_boundary.txt - 接口边界图 - 公开与内部接口调用方
+5.8 接口边界与运行部署 - 03_deployment_topology.png - 03_deployment_topology.txt - 部署图 - 终端、服务、数据库和资源
+5.8 接口边界与运行部署 - 19_security_boundary.png - 19_security_boundary.txt - 安全边界图 - 已实现控制和待确认控制
+10 测试与验证 - 20_test_strategy.png - 20_test_strategy.txt - 测试分层图 - 已验证与待专项验证
+10 测试与验证 - 21_e2e_test_sequence.png - 21_e2e_test_sequence.txt - 测试时序图 - 端到端验证步骤与证据

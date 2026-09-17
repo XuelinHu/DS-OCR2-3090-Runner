@@ -1,0 +1,1 @@
+该状态模型图细化Android页面的Idle、Ready、Uploading、CreatingTask、Queued、Running、Completed、Failed和Canceled状态。转换条件来自现有客户端异步流程和服务端任务枚举，可用于验证按钮启用、状态标签、错误信息和重试入口是否一致。它与服务端任务状态图分开，避免混淆界面阶段和数据库状态。

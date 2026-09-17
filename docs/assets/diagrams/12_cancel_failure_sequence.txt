@@ -1,0 +1,1 @@
+该时序图并列展示用户取消和工作进程失败两条异常路径。取消只对queued或running任务改变状态，终态任务保持不变；执行失败则依据retryable、attempts和max_attempts决定回到queued还是进入failed。两条路径都通过任务服务更新PostgreSQL，避免客户端或工作进程绕过业务规则直接修改数据。
